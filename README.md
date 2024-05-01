@@ -32,7 +32,6 @@ $ rails db:migrate
 ```
 Edit config/routes.rb
 ```
-# --- config/routes.rb ---
 Rails.application.routes.draw do
   root 'posts#index'
   resources :tags
@@ -193,7 +192,7 @@ Edit app/views/posts/_posts.rb
   <% end %>
 </div>
 ```
-Edit app/views/tags/_tag.rb 
+Edit app/views/tagsgit statu/_tag.rb 
 ```
 <div id="<%= dom_id tag %>">
   <p>
@@ -210,5 +209,5 @@ Edit app/views/tags/_tag.rb
 ```
 Start application on http://localhost:3000
 ```
-bin/dev
+$ bin/dev
 ```
